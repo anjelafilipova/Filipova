@@ -20,15 +20,15 @@ public class LongestSequenceofEqual_2 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int[] arr = new int[n];
-        int max = 0;// пази най-дългата редица
-        int current = 1;//текуща дължина
+        int max = 0;// 
+        int current = 1;
 
         for (int i = 0; i <arr.length; i++) {
             arr[i] = sc.nextInt();
         }
 
         for (int i = 1; i < arr.length; i++) {
-            if (arr[i] == arr[i - 1]) {//сегашното число = на предишното
+            if (arr[i] == arr[i - 1]) {
                 current++;
                max = Math.max(max, current);
 
